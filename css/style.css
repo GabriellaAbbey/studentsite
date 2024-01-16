@@ -3,7 +3,8 @@
         margin: 0px;
         font-family: sans-serif;
         display: grid;
-        place-items: center;
+        justify-content: center;
+        align-content: center;
         min-height: 100vh;
 
         }
@@ -11,6 +12,7 @@
         color: white;
         max-width: 30em;
         margin: 0 auto;
+
 
         }   
 
@@ -35,5 +37,7 @@
 
     h2 {
         text-align: center;
+        margin: 0 auto;
+       
     }
   
