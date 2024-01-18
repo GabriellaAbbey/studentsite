@@ -32,3 +32,104 @@
     header a:hover {
         color: rgba(255, 255, 255, 1)
     }
+ /* SITE NAV */
+    .site-id h1 {
+        margin: 0;
+    }
+
+    .site-nav ul {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+    }
+
+    .site-nav a {
+        display: block;
+        padding: 1em;
+    }
+
+ /* MAIN */
+     main {
+        background: rgba(255, 0, 157, 0.8);
+    }
+
+/* FOOTER */
+    footer {
+        border-top: 1px solid rgba(0,0,0,.05);
+        padding: 1em;
+        background-color: rgb(246, 193, 255);
+    }
+    footer a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: rgba(255, 255, 255, 1)
+    }
+    
+
+/* SOCIAL NAV*/
+
+    .social-nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    .social-nav a {
+        display: block;
+        padding: 1em;
+    }
+/* HERO SECTION */
+.hero {
+    background-color: rgb(255, 182, 182);
+    text-align: center;
+    color: white;
+    padding: 6em 1em;
+}
+
+.hero h1 {
+    font-size: 6em;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.hero p {
+    max-width: 30em;
+    margin: 1em auto;
+}
+
+/* COURSES SECTION */
+
+.courses {
+    padding: 6em 1em;
+    display: grid;
+    justify-content: center;
+    color: white;
+
+}
+
+.courses ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.courses h2 {
+    text-align: center;
+
+}
+.courses a {
+    color: white;
+    text-decoration: none;
+}
+
+.courses a:hover {
+    color: rgb(220, 220, 220);
+}
