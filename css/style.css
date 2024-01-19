@@ -16,7 +16,7 @@
     }
 /* HEADER */
     header {
-        background-color: rgb(246, 193, 255);
+        background-color: rgb(179, 97, 208);
         color: rgba(0, 0, 0, 0.8);
         padding: 1em;
         display: grid;
@@ -53,26 +53,26 @@
 
  /* MAIN */
      main {
-        background: rgba(255, 0, 157, 0.8);
+        background: rgb(252, 236, 255);
     }
 
 /* FOOTER */
     footer {
         border-top: 1px solid rgba(0,0,0,.05);
         padding: 1em;
-        background-color: rgb(246, 193, 255);
+        background-color: rgb(255, 255, 255);
     }
     footer a {
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(179, 97, 208);
         text-decoration: none;
     }
 
     footer a:hover {
-        color: rgba(255, 255, 255, 1)
+        color: rgb(246, 193, 255);
     }
     
 
-/* SOCIAL NAV*/
+/* SOCIAL NAV */
 
     .social-nav ul {
         margin: 0;
@@ -87,7 +87,7 @@
     }
 /* HERO SECTION */
 .hero {
-    background-color: rgb(255, 182, 182);
+    background-color: rgb(179, 97, 208);
     text-align: center;
     color: white;
     padding: 6em 1em;
@@ -111,7 +111,7 @@
     padding: 6em 1em;
     display: grid;
     justify-content: center;
-    color: white;
+    color: brgb(179, 97, 208);
 
 }
 
@@ -126,10 +126,10 @@
 
 }
 .courses a {
-    color: white;
+    color: rgb(179, 97, 208);
     text-decoration: none;
 }
 
 .courses a:hover {
-    color: rgb(220, 220, 220);
+    color: color: rgb(246, 193, 255);
 }
