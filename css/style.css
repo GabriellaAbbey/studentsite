@@ -207,7 +207,7 @@ aside {
 }
 
 /* CODE BLOCKS */
-pre code {
+pre ,code {
     width: 100%;
     display: block;
     border: 1px solid #ddd;
@@ -215,6 +215,8 @@ pre code {
     padding: 1em 3em;
     margin-bottom: 1em;
     line-height: 1.5;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
 } 
 
 .markup-box {
@@ -224,7 +226,15 @@ pre code {
     padding: 1em 3em;
     margin-bottom: 1em;
 }
+/* GISTS TRROUBLE SHOOTING (Scrollbar issue) */
 
+@media (min-wdith: 768px) and (max-width: 910px) {
+    .gist {
+        max-width: 450px;
+}
+
+
+}
 /* DEFINITION LISTS */
  dt {
     font-weight: bold;
@@ -234,3 +244,4 @@ pre code {
  dd {
     margin: 0;
  }
+ 
