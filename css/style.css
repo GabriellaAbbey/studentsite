@@ -20,7 +20,7 @@
         color: rgba(0, 0, 0, 0.8);
         padding: 1em;
         display: grid;
-        grid-template: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
 
     }
@@ -55,6 +55,20 @@
      main {
         background: rgb(252, 236, 255);
     }
+
+/* ART 128 PAGE */
+.project { 
+    color: rgb(149, 81, 174);
+}
+ .project a {
+    text-decoration: none;
+    color:  rgba(179, 97, 208);
+ }
+
+ .project a:hover {
+    color: rgb(246, 193, 255);
+}
+
 
 /* FOOTER */
     footer {
@@ -91,6 +105,7 @@
         text-align: center;
         color: white;
         padding: 6em 1em;
+        
     }
 
     .hero h1 {
@@ -111,7 +126,7 @@
         padding: 6em 1em;
         display: grid;
         justify-content: center;
-        color: rgb(179, 97, 208);
+        color: rgb(149, 81, 174);
 
     }
 
@@ -137,6 +152,17 @@
     .page-sub .hero{
         background-color: rgb(196, 127, 212);
         color:rgb(255, 255, 255);
+    }
+    .page-home .hero {
+        background-image: url(../img/marble.jpg);
+        background-size: cover;
+        background-position: center top;
+        padding: 20vh 1em 20vh 1em;
+    } 
+     .page-home header {
+        background-color: transparent;
+        position: absolute;
+        width: 100%;
     }
 
 /* COURSE PAGES WITH MUPLITLE PROJECT LISTS */
@@ -164,13 +190,14 @@ section {
 }
 
 /* SIDEBAR/ASIDE */
-aside {padding: 2em 0;
+aside {
+    padding: 2em 0;
 
 }
-@media (min-width: 68px) {
+@media (min-width: 768px) {
     .two-col-sidebar {
         display: grid;
-        grid-template: 20em auto;
+        grid-template-columns: 20em auto;
     }
     .two-col-sidebar aside{
         border-right: 1px solid rgba (0,0,0, 0.1);
@@ -178,3 +205,32 @@ aside {padding: 2em 0;
         padding: .3em 2em 0 0;
     }
 }
+
+/* CODE BLOCKS */
+pre code {
+    width: 100%;
+    display: block;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+} 
+
+.markup-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 1em 3em;
+    margin-bottom: 1em;
+}
+
+/* DEFINITION LISTS */
+ dt {
+    font-weight: bold;
+    margin-top: 1em;
+ }
+
+ dd {
+    margin: 0;
+ }
