@@ -245,3 +245,37 @@ pre ,code {
     margin: 0;
  }
  
+ /*  NOTES PAGE */
+
+
+
+ .notes a {
+    text-decoration: none;
+    color: rgb(202, 129, 228);
+
+ }
+ .notes a:hover {
+    color: rgb(246, 193, 255);
+ }
+ .notes {
+    color: rgb(60, 23, 73);
+ }
+
+
+ /* PORTFOLIO PAGE */
+
+ .portfolio {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: rgb(149, 81, 174);
+
+ }
+ .portfolio a {
+    text-decoration: none;
+    color: rgb(202, 129, 228);
+
+ }
+ .portfolio a:hover {
+    color: rgb(246, 193, 255);
+ }
