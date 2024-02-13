@@ -148,6 +148,10 @@
     .courses a:hover {
         color: rgb(246, 193, 255);
     }
+
+    .courses img {
+        display: block;
+    }
 /* SUB PAGES */
     .page-sub .hero{
         background-color: rgb(196, 127, 212);

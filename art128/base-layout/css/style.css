@@ -164,3 +164,72 @@ body {
   * {
     box-sizing: border-box;
   }
+
+  /* CONTAINER */
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: pink;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      background-color: rgb(209, 42, 70);
+    }
+  }
+
+  @media (min-width: 1050px) {
+    .container {
+      background-color: rgb(179, 42, 137);
+    }
+  }
+
+  @media (min-width: 1250px) {
+    .container {
+      background-color: rgb(203, 109, 175);
+    }
+  }
+
+  /* For DEMO purpose only */
+body.demo {
+  padding-top: 2em;
+}
+
+  body.demo:before {
+    content: "Small screen LESS than 786px!";
+    background-color: #933;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    color: white;
+    padding: .5em;
+  }
+
+  @media (min-width: 768px) {
+    body.demo::before {
+      background-color: #bcb83d;
+      content: "Mid Sized (Tablet) 786-1050!";
+    }
+  }
+
+  @media (min-width: 1050px) {
+    body.demo::before {
+      background-color: #693;
+      content: "Large (Notebook) 1050-1250!";
+    }
+    }
+  
+     @media (min-width: 1050px) {
+    body.demo::before {
+      background-color: #693;
+      content: "Large (Notebook)  1050-1250!";
+    }
+    }
+    @media (min-width: 1250px) {
+      body.demo::before {
+        background-color: #89c;
+        content: "Extra Large (Desktop) 1250+!";
+      }
+      }
