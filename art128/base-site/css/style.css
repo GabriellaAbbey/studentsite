@@ -18,7 +18,7 @@
         #GRID SYSTEM
             #CLEARFIX
     #BASE SITE
-        #SITE STRUCTURE
+        #SITE STR UCTURE
             #HEADER
                 # site-id (LOGO)
             #FOOTER
@@ -132,7 +132,7 @@ body {
     color: rgb(243, 243, 243);
     padding: 10px;
     display: inline-block;
-    margin: .5em;
+    margin: .5em .5em .5em 0;
     text-align: center;
     text-decoration: none;
     border-radius: .5em;
@@ -285,10 +285,78 @@ body.demo {
       padding: .5em;
       text-align: center;
     }
-    
+/*     
     section,
     .container {
       overflow-x: hidden;
+    } */
+
+  /* SITE STRUCTURE */
+
+  /* SITE HEADER */
+  .site-header {
+    padding: 1em;
+  }
+
+  /* LARGER SCREENS LOGO LEFT, NAV RIGHT */
+  @media(min-width: 768px) {
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  /* STYLING FOR HEADER + FOOTER */
+   
+    .site-header a, .site-footer a  {
+      color:rgba(0, 0, 0, .8);
+      text-decoration: none;
+    }
+    .site-header a:hover, .site-footer a:hover  {
+      color:rgba(0, 0, 0, 1);
+      text-decoration: none;
     }
 
+  /* LOGO AREA */
   
+  .site-id h1 {
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+    padding-top: .55em;
+  }
+
+
+/* SITE NAV */
+  .site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .site-nav a {
+    display: block;
+    padding: 1em;
+  }
+
+/* SECTIONS */
+section {
+  padding: 3em 0;
+}
+/* HERO */
+
+.hero {
+    padding: 6em 4%;
+    background-color: rgb(178, 186, 178);
+    text-align: center;
+  }
+
+  .hero h1, p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
