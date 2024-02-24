@@ -159,6 +159,10 @@ body {
     color: rgba(255, 255, 255, 0.8);
   }
 
+  .row.button {
+    text-align: center;
+  }
+
   /* LAYOUT RESET */
 
   * {
@@ -285,11 +289,6 @@ body.demo {
       padding: .5em;
       text-align: center;
     }
-/*     
-    section,
-    .container {
-      overflow-x: hidden;
-    } */
 
   /* SITE STRUCTURE */
 
@@ -346,6 +345,11 @@ body.demo {
 section {
   padding: 3em 0;
 }
+
+.column.one-third {
+  text-align: center;
+}
+
 /* HERO */
 
 .hero {
