@@ -204,8 +204,8 @@ aside {
         grid-template-columns: 20em auto;
     }
     .two-col-sidebar aside{
-        border-right: 1px solid rgba (0,0,0, 0.1);
-        margin: 0 3em 2 em 0;
+        border-right: 1px solid rgba(0,0,0, 0.1);
+        margin: 0 3em 2em 0;
         padding: .3em 2em 0 0;
     }
 }
@@ -236,9 +236,8 @@ pre ,code {
     .gist {
         max-width: 450px;
 }
-
-
 }
+
 /* DEFINITION LISTS */
  dt {
     font-weight: bold;
