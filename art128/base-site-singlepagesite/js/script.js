@@ -1,6 +1,6 @@
  document.addEventListener("DOMContentLoaded", function() {
   
-    //TOGGLE MENU FOR SMALL SCREENS//
+    //MENU FOR SMALL SCREENS + DATA ATTRIBUTES not toggle //
     const menubutton = document.querySelector('.menu-button');
     const menunav = document.querySelector('.toggle-nav'); 
     menubutton.addEventListener('click', function() {
