@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Base | Toggle Nav</title>
+  <title>Base | Subpages</title>
   <meta name="description" content="SiteBase: A minimmalistic HTML + CSS + JS base front-end framework for simple website projects" >
 
   <!-- This is for MOBILE/ SMALL SCREENS -->
@@ -17,15 +17,16 @@
 <header class="site-header toggle-nav" data-navstate="closed">
   <div class="container">
     <div class="site-id">
-      <h1><a href="index.html">Base Site</a></h1>
+      <h1><a href="index.html">Site Name</a></h1>
     </div>
     <nav class="site-nav">
-      <button class="menu-button navicon">Menu</button>
+      <div class="menu-button navicon">Menu</div>
       <ul>
-        <li><a href="#">Lorem</a></li>
-        <li><a href="#">Ipsum</a></li>
-        <li><a href="#">Dolorem</a></li>
-        <li><a href="#">Consectur</a></li>
+        <li class="hidden-mobile"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        <!-- <li><a href="subpage-withsidebar.html">Sidebar Page</a></li> -->
+
       </ul>
     </nav>
   </div>
@@ -71,9 +72,8 @@
       <nav class="site-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Ipsum</a></li>
-          <li><a href="#">Dolorem</a></li>
-          <li><a href="#">Consectur</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contacts</a></li>
         </ul>
       </nav>
     </div>
