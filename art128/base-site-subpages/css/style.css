@@ -142,6 +142,15 @@ body {
 
   /* BUTTONS */
 
+  .menu-button {
+    border: none;
+    background-color: transparent;
+  }
+  .menu-button:hover {
+    border: none;
+    background-color: transparent;
+  }
+  
   .button, button, form input[type="submit"] {
 
     background-color: rgba(78, 171, 47, 0.8);
