@@ -723,6 +723,11 @@ form input[type="submit"] {
   }
 }
 
+span {
+  color: rgb(180, 220, 186);
+  font-size: 1em;
+  font-weight: lighter;
+}
 /* CUSTOM SITE CSS *//* CUSTOM SITE CSS *//* CUSTOM SITE CSS */
 .section-title{
   text-align: center;
