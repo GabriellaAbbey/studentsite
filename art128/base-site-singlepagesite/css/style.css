@@ -722,3 +722,13 @@ form input[type="submit"] {
     margin-right: 0;
   }
 }
+
+/* CUSTOM SITE CSS *//* CUSTOM SITE CSS *//* CUSTOM SITE CSS */
+.section-title{
+  text-align: center;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid rgba(0, 0, 0, .2);
+}
