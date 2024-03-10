@@ -16,7 +16,7 @@
 
 <body id="top">
   
-<header class="site-header toggle-nav" data-navstate="closed">
+<header class="site-header toggle-nav animated fixed">
   <div class="container">
     <div class="site-id">
       <h1><a href="#top">Site Name</a> <span> / Single Page </span></h1>
@@ -24,9 +24,9 @@
     <nav class="site-nav">
       <button class="menu-button navicon">Menu</button>
       <ul class="nav">
-        <li><a href="#top">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contacts</a></li>
+        <li><a class="scroll" href="#top">Home</a></li>
+        <li><a class="scroll" href="#about">About</a></li>
+        <li><a class="scroll" href="#contact">Contacts</a></li>
 
       </ul>
     </nav>
@@ -74,7 +74,7 @@
       <article>
         <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
        
-        <h2 class="subhead">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ultrices augue vitae purus sodales eleifend.</h2>
+        <h2>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ultrices augue vitae purus sodales eleifend.</h2>
        
        <div class="date"> Date MM/DD/YYYY </div>
         
@@ -147,9 +147,9 @@
     <div class="container">
       <nav class="site-nav">
         <ul>
-          <li><a href="#top">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contacts</a></li>
+          <li><a class="scroll" href="#top">Home</a></li>
+          <li><a class="scroll" href="#about">About</a></li>
+          <li><a class="scroll" href="#contact">Contacts</a></li>
         </ul>
       </nav>
     </div>
@@ -165,6 +165,11 @@
 
 
   <!-- End of container -->
+
+  <!-- SCROLL JS (Ben De Cock's Anchor Scroll)-->
+<script src=js/scroll.js></script>
+
+<!--MAIN JS-->
 <script src="js/script.js"></script>
 
 </header>

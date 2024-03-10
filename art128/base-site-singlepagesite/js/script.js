@@ -12,3 +12,23 @@
     });
   
   });
+
+
+// CLOSE MENU NAV WHENA STICKY NAV LINK IS CLICKED //
+const fixednavlinks = document.querySelectorAll('.fixed nav a');
+fixednavlinks.forEach(function(el) {
+    el.onclick = function() {
+       menunav.setAttribute('data-navstate', 'closed');
+    };
+});
+  
+
+    //  //STICKY NAV LINKS TOGGLE MENU NAV
+    //  var stickynavlinks = document.querySelectorAll(".sticky nav a");
+    //  var stickyheader = document.querySelector(".sticky");
+    //  var j;
+    //  for (j = 0; j < stickynavlinks.length; j++) {
+    //      stickynavlinks[j].onclick = function () {
+    //          stickyheader.setAttribute('data-navstate', 'closed');
+    //      };
+    //  }; 
