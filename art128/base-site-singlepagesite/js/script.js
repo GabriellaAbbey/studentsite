@@ -11,9 +11,6 @@
       }
     });
   
-  });
-
-
 // CLOSE MENU NAV WHENA STICKY NAV LINK IS CLICKED //
 const fixednavlinks = document.querySelectorAll('.fixed nav a');
 fixednavlinks.forEach(function(el) {
