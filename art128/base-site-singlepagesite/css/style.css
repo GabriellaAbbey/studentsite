@@ -375,7 +375,7 @@ body.demo {
 
 /* SECTIONS */
 section {
-  padding: 2em 0;
+  padding: 3em 0;
 }
 
 .column.one-third {
@@ -779,9 +779,11 @@ span {
 /* CUSTOM SITE CSS *//* CUSTOM SITE CSS *//* CUSTOM SITE CSS */
 .section-title {
   text-align: center;
-  margin-bottom: 4em;
+  margin-bottom: 3em;
   margin-top: 4em;
 }
+.section-title
+
 .section-title::after {
   content: "";
   display: block;
@@ -805,4 +807,4 @@ span {
   #contact {
     padding-bottom: 20em;
   }
-}
+  }
