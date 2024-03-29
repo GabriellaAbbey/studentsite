@@ -33,7 +33,7 @@
 
 body {
   font-size: 87.5%; /* 14px */
-  font-family: Helvetica, arial, sans-serif;
+  font-family: "bryant-web", Helvetica, arial, sans-serif;
   line-height: 1.45;
   color: #E252A9;
   background-color: #F4E9D8;
@@ -45,6 +45,12 @@ body {
       48, 36, 24 ,21, 18, 16
 */
 
+h1, h2, h3, h4 {
+  font-family: maregraphe-variable, sans-serif;
+  font-variation-settings: 
+  "wght" 500;
+
+}
 h1 {
  font-size: 3em; /* 48px */
  line-height: 1; 
@@ -348,7 +354,7 @@ text-decoration: none;
 
 .site-footer {
 background-color: #F3A33A;
-color: white;
+color: #F4E9D8;
 }
 
 .site-footer nav ul {
@@ -405,7 +411,7 @@ text-align: center;
 .hero {
 padding: 1em 4% 4em 4%;
 background-color: #E252A9;
-color: white;
+color: #F4E9D8;
 }
 
 .hero .row {
@@ -425,6 +431,7 @@ padding: 0;
 max-width: 600px;
 margin-left: auto;
 margin-right: auto;
+text-align: center;
 }
 
 /* TOGGLE NAV */
@@ -838,18 +845,50 @@ padding-top: 3em;
 }
 
 /* SUB SECTION STYLING */
+/* ABOUT SECTION */
+
+#about {
+ display: grid;
+ text-align: center;justify-content: center;
+ align-content: center;
+}
 
 /* MENU SECTION */
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 #menu .open-face-taco {
 transform: scale(1.2);
 transform-origin: right center;
+}
+ul {
+  list-style-type: none;
+}
+.pieces {
+  font-style: italic;
+  font-size: 1em;
 }
 
 /* ORDER SECTION */
 #order {
 color: #27782F;
 }
+
+.order-button {
+  background-color: #E252A9;
+  border: 1px #E252A9;
+  color: rgb(243, 243, 243);
+  padding: 10px;
+  display: inline-block;
+  margin: .5em .5em .5em 0;
+  text-align: center;
+  text-decoration: none;
+  border-radius: .5em;
+  line-height: 1;
+  }
+
 
 
 
@@ -862,7 +901,7 @@ color: #F3A33A;
 /* MERCH SECTION */
 #merch {
 background-color: #F3A33A;
-color: white;
+color: #F4E9D8;
 }
 
 #merch h2 {
