@@ -38,6 +38,11 @@ body {
   color: #E252A9;
   background-color: #F4E9D8;
 }
+body  p {
+  font-family: "bryant-web", Helvetica, arial, sans-serif;
+}
+
+
 
 /* HEADINGS */
 /* 
@@ -45,12 +50,12 @@ body {
       48, 36, 24 ,21, 18, 16
 */
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: maregraphe-variable, sans-serif;
-  font-variation-settings: 
-  "wght" 500;
-
+  font-variation-settings: 'opsz' 28, 'wght' 500;
+  letter-spacing: .03em;
 }
+
 h1 {
  font-size: 3em; /* 48px */
  line-height: 1; 
@@ -160,8 +165,8 @@ img {
 
 .button, button, form input[type="submit"] {
 
-  background-color: rgba(78, 171, 47, 0.8);
-  border: 1px solid rgba(51, 202, 1, 0.8);
+  background-color:#27782F;
+  border: 1px solid #27782F;
   color: rgb(243, 243, 243);
   padding: 10px;
   display: inline-block;
@@ -174,8 +179,8 @@ img {
 
 .button:hover, button:hover,
 form input[type="submit"]:hover {
-  background-color: rgba(91, 237, 42, 0.8);
- border-color:rgba(91, 237, 42, 0.8);
+  background-color:#24a431;
+ border-color:#24a431;
   color: white;
   text-decoration: none;
  
@@ -847,10 +852,15 @@ padding-top: 3em;
 /* SUB SECTION STYLING */
 /* ABOUT SECTION */
 
-#about {
- display: grid;
- text-align: center;justify-content: center;
- align-content: center;
+#about h4 {
+ /* display: grid;
+ text-align: center;
+ justify-content: center;
+ align-content: center; */
+ max-width: 47ch;
+  text-wrap: pretty;
+ margin-left:auto;
+ margin-right: auto;
 }
 
 /* MENU SECTION */
@@ -865,21 +875,18 @@ transform-origin: right center;
 }
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 .pieces {
   font-style: italic;
   font-size: 1em;
 }
 
-/* ORDER SECTION */
-#order {
-color: #27782F;
-}
-
-.order-button {
+/* PINK BUTTON */
+.fullmenu-button {
   background-color: #E252A9;
   border: 1px #E252A9;
-  color: rgb(243, 243, 243);
+  color:  #F4E9D8;
   padding: 10px;
   display: inline-block;
   margin: .5em .5em .5em 0;
@@ -889,6 +896,18 @@ color: #27782F;
   line-height: 1;
   }
 
+  .fullmenu-button:hover {
+    border-color:#e778bb;
+    background-color:  #F4E9D8;
+    color:  #E252A9;
+    text-decoration: none;
+ 
+  }
+
+/* ORDER SECTION */
+#order {
+color: #27782F;
+}
 
 
 
