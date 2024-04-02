@@ -130,13 +130,7 @@ a:hover {
   margin-right: auto;
 }
 
-/* @media(min-width: 768px) {
-.hidden-desktop {
-  position: absolute;
-  top:-9999px;
-  left:-9999px;
-}
-} */
+
 
 @media(max-width: 768px) {
 .hidden-mobile {
@@ -222,8 +216,11 @@ body {
 }
 
 @media (min-width: 768px) {
-  /* TABLET Sized Styling goes here! */
-}
+  /* #about {
+    display: ; */
+
+  }
+
 
 @media (min-width: 1050px) {
   body {
@@ -349,7 +346,7 @@ body.demo:before {
 /* STYLING FOR HEADER + FOOTER */
  
 .site-header a, .site-footer a  {
-color:rgba(255, 255, 255, .8);
+color: #F4E9D8;
 text-decoration: none;
 }
 .site-header a:hover, .site-footer a:hover  {
@@ -466,8 +463,9 @@ text-align: center;
     text-align: center;
   }
   .toggle-nav .site-nav a:hover {
-    background-color: rgba(91, 237, 42, 0.8);
-    color:white;
+    background-color: #F4E9D8;
+    color:#E252A9;
+    opacity: 70%;
 }
 
 .toggle-nav[data-navstate=open] ul {
@@ -493,7 +491,7 @@ margin: 0;
 content: "\2630";
 display: inline-block;
 padding: .2em .4em;
-color: rgba(0,0,0, .8);
+color:  #F4E9D8;
 font-size: 2em;
 margin: 0;
 padding: 0 .4em;
@@ -882,8 +880,12 @@ ul {
   font-size: 1em;
 }
 
+.downloadbutton:hover {
+  opacity: 70%;
+}
+
 /* PINK BUTTON */
-.fullmenu-button {
+/* .fullmenu-button {
   background-color: #E252A9;
   border: 1px #E252A9;
   color:  #F4E9D8;
@@ -902,7 +904,7 @@ ul {
     color:  #E252A9;
     text-decoration: none;
  
-  }
+  } */
 
 /* ORDER SECTION */
 #order {
