@@ -129,7 +129,15 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+ .column.one-half {
+    border: 2px solid red; 
+ }
 
+ .content-centered {
+    display: grid;
+  justify-items: center;
+  align-content: center;
+ }
 
 
 @media(max-width: 768px) {
@@ -159,15 +167,15 @@ img {
 
 .button, button, form input[type="submit"] {
 
-  background-color:#27782F;
-  border: 1px solid #27782F;
-  color: rgb(243, 243, 243);
+  background-color:#ffffff00;
+  border: 2px solid #27782F;
+  color: #27782F;
   padding: 10px;
   display: inline-block;
   margin: .5em .5em .5em 0;
   text-align: center;
   text-decoration: none;
-  border-radius: .5em;
+  border-radius: 2em;
   line-height: 1;
   }
 
@@ -349,7 +357,8 @@ body.demo:before {
 color: #F4E9D8;
 text-decoration: none;
 }
-.site-header a:hover, .site-footer a:hover  {
+.site-header a:hover,
+.site-footer a:hover  {
 color:rgba(255, 255, 255, 1);
 text-decoration: none;
 }
@@ -856,7 +865,7 @@ padding-top: 3em;
  justify-content: center;
  align-content: center; */
  max-width: 47ch;
-  text-wrap: pretty;
+ text-wrap: pretty;
  margin-left:auto;
  margin-right: auto;
 }
@@ -883,6 +892,24 @@ ul {
 .downloadbutton:hover {
   opacity: 70%;
 }
+.downloadbutton {
+  text-align: right;
+  max-width: 400px;
+
+}
+
+.column.one-half p {
+  max-width: 25ch;
+  text-wrap: pretty;
+}
+.column.one-half h2, 
+.column.one-half h3 {
+  margin-bottom: 0;
+}
+#menu ul {
+  margin-top: 0;
+}
+
 
 /* PINK BUTTON */
 /* .fullmenu-button {
@@ -927,4 +954,11 @@ color: #F4E9D8;
 
 #merch h2 {
 text-align: center;
+}
+
+.merchlogo  {
+border: 2px solid red;
+text-align: center;
+position: absolute;
+
 }
