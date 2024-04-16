@@ -896,7 +896,6 @@ ul {
  background-size: 100%;
  display: flex;
  justify-content: flex-end;
- border: 1px solid red;
 }
 
 .testbutton:hover {
@@ -975,7 +974,6 @@ text-align: center;
 }
 
 .merchlogo {
-border: 2px solid red;
 text-align: center;
 position: absolute;
 top: 0;
@@ -983,13 +981,13 @@ left: 50%;
 transform: translate(-50%,-50%);
 /* margin-top: -6em; */
 }
-
+ 
 #merch .product-images img {
   border-radius: 50%;
   text-align: center;
 }
 #merch .product-images img:hover {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.406);
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.406);
 }
 
 #merch .product-images a {
@@ -1001,4 +999,5 @@ transform: translate(-50%,-50%);
 #merch .product-images a:hover {
   background-color:#e252a89e;
   ;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.406);
 }
