@@ -40,7 +40,8 @@ body {
   background-size: cover;
   background-blend-mode: soft-light;
   background-color: #F4E9D8;
-  ;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 
@@ -50,13 +51,14 @@ body  p {
 
 .hero::after {
   content: '';
-  clip-path: ellipse(55% 100% at 50% 100%);
   position: absolute;
   left: 0;
-  background-color:#F4E9D8;
-  bottom: 0px;
+  bottom: -500px;
   width: 100%;
-  height: 70px;
+  height: 500px;
+  background-image: url(../img/hero-bottom.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   }
 
 
@@ -307,6 +309,9 @@ body.demo:before {
 
   .row > .column {
     margin-bottom: 4%;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: 768px) {
@@ -440,7 +445,7 @@ padding: 1em 4% 4em 4%;
 background-color: #E252A9;
 color: #F4E9D8;
 position: relative;
-
+/* clip-path: ellipse(55% 100% at 50% 100%); */
 
 }
  
@@ -879,6 +884,7 @@ padding-top: 3em;
 }
 
 /* SUB SECTION STYLING */
+
 /* ABOUT SECTION */
 
 #about h4 {
@@ -891,6 +897,10 @@ padding-top: 3em;
  margin-left:auto;
  margin-right: auto;
 }
+ #about .container {
+  padding-top: 50px;
+ }
+
 
 /* MENU SECTION */
 
@@ -916,9 +926,18 @@ ul {
  height: 150px;
  width: 150px;
  background-size: 100%;
- display: flex;
- justify-content: flex-end;
+ display: block;
+ margin-left: auto;
+ margin-right: 5em;
 }
+
+@media (max-width: 768px)
+{
+.testbutton {
+  margin-top: 1em;
+}
+}
+
 
 .testbutton:hover {
   background: url("../img/pinktransparent-button.png");
@@ -929,9 +948,6 @@ ul {
 .testbutton a {
   color: transparent
 }
-
-
-
 
 
 .column.one-half p {
@@ -945,29 +961,6 @@ ul {
 #menu ul {
   margin-top: 0;
 }
-
-
-/* PINK BUTTON */
-/* .fullmenu-button {
-  background-color: #E252A9;
-  border: 1px #E252A9;
-  color:  #F4E9D8;
-  padding: 10px;
-  display: inline-block;
-  margin: .5em .5em .5em 0;
-  text-align: center;
-  text-decoration: none;
-  border-radius: .5em;
-  line-height: 1;
-  }
-
-  .fullmenu-button:hover {
-    border-color:#e778bb;
-    background-color:  #F4E9D8;
-    color:  #E252A9;
-    text-decoration: none;
- 
-  } */
 
 /* ORDER SECTION */
 #order {
@@ -1011,7 +1004,7 @@ padding-bottom: 10em;
 
 #merch::after {
   content: '';
-  clip-path: ellipse(55% 100% at 50% 100%);
+  clip-path: ellipse(60% 100% at 50% 100%);
   position: absolute;
   left: 0;
   background-color:#F3A33A;
@@ -1019,6 +1012,8 @@ padding-bottom: 10em;
   width: 100%;
   height: 70px;
   }
+
+
 
 
 #merch h2 {
@@ -1040,9 +1035,6 @@ transform: translate(-50%,-50%);
   border-radius: 50%;
   text-align: center;
 }
-#merch .product-images img:hover {
-  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.406);
-}
 
 #merch .product-images a {
   display: block;
@@ -1053,7 +1045,8 @@ transform: translate(-50%,-50%);
 #merch .product-images a:hover {
   background-color:#e252a89e;
   ;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.406);
+  color:#f6f6f6;
+  box-shadow: 0 0 10px 0 rgba(8, 0, 255, 0.195);
 }
 
 
