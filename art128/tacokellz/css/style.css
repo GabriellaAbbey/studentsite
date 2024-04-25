@@ -1047,11 +1047,76 @@ transform: translate(-50%,-50%);
 
 
 /* /* animations  */
+.drop {
+  opacity: 0;
+  display: block;
+  animation: dropin 0.45s ease-out forwards;
+  
+}
+
+.drop :nth-child(1) {
+  opacity: 0;
+  display: block;
+  animation: dropin 0.5s ease-out forwards;
+}
+.drop :nth-child(2){
+ 
+  opacity: 0;
+  display: block;
+  animation: dropin 0.65s ease-out forwards;
+}
+.drop :nth-child(3){
+  opacity: 0;
+  display: block;
+  animation: dropin 0.75s ease-out forwards;
+}
+.drop :nth-child(4){
+  opacity: 0;
+  display: block;
+  animation: dropin 0.85s ease-out forwards;
+}
+.drop :nth-child(5){
+  opacity: 0;
+  display: block;
+  animation: dropin 0.95s ease-out forwards;
+}
+.drop :nth-child(6){
+  opacity: 0;
+  display: block;
+  animation: dropin 1.5s ease-out forwards;
+}
+
+
+@keyframes dropin {
+  0% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      transform: translateY(0px);
+      opacity: 1;
+  }  
+}
+
+@keyframes bigdrop {
+  0% {
+    transform: translateY(-50px);
+    transform: translateY(-50px);
+    opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      transform: translateY(0px);
+      opacity: 1;
+  }  
+}
 
 .tacobaby {
   opacity: 0;
   display: block;
-  animation: fadein 1s forwards .05s, rotatingbaby 3s infinite;
+  animation: fadein 1s forwards .05s, rotatingbaby 3s infinite, bigdrop .5s ease-out forwards;
   animation-fill-mode: both;
   transform-origin: center bottom;
 }
@@ -1062,7 +1127,7 @@ transform: translate(-50%,-50%);
   }
   50% {
     rotate: 5deg;
-}
+  }
   100% {
     rotate: -5deg;
   }
