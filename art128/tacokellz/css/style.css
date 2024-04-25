@@ -847,11 +847,7 @@ margin-right: 0;
 }
 }
 
-span {
-color: rgb(180, 220, 186);
-font-size: 1em;
-font-weight: lighter;
-}
+
 /* CUSTOM SITE CSS *//* CUSTOM SITE CSS *//* CUSTOM SITE CSS */
 .section-title {
 text-align: center;
@@ -866,7 +862,7 @@ margin: 0.5em auto;
 border-bottom: 3px solid rgba(0, 0, 0, .2);
 }
 
-.site-header.fixed {
+.site-header.fixed { 
 position: fixed;
 width: 100%;
 top: 0;
@@ -1050,4 +1046,52 @@ transform: translate(-50%,-50%);
 }
 
 
-/* BACKGROUND CURVES */
+/* /* animations  */
+
+.tacobaby {
+  opacity: 0;
+  display: block;
+  animation: fadein 1s forwards .05s, rotatingbaby 3s infinite;
+  animation-fill-mode: both;
+  transform-origin: center bottom;
+}
+
+@keyframes rotatingbaby {
+  0% {
+    rotate: -5deg;
+  }
+  50% {
+    rotate: 5deg;
+}
+  100% {
+    rotate: -5deg;
+  }
+}
+
+
+
+.hero h1 span:nth-child(1) {
+  opacity: 0;
+  display:block;
+  animation: fadein 1s forwards .05s;
+}
+
+.hero h1 span:nth-child(2) {
+  opacity: 0;
+  display:block;
+  animation: fadein 1s forwards .2s;
+  }
+.hero p {
+  opacity: 0;
+  animation: fadein 1s forwards .4s;
+  }
+
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
