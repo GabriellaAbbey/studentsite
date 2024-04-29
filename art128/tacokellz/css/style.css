@@ -971,11 +971,29 @@ color: #F3A33A;
 padding-bottom: 10em;
 }
 
-#events .container {
-  position: relative;
-  /* background-color: red; */
+@media (max-width: 768px) {
+#events p {
+  margin: auto;
+}
+ #events .column.one-half {
+  text-align: center;
+ }
+ .map img {
+  display: relative;
+  transform: scale(1.5);
+  max-width: 100%;
+ padding-top: 20px;
+  padding-bottom: 80px ;
+}
+  
 }
 
+#events .container {
+  position: relative;
+}
+
+
+    
 @media (min-width: 768px) {
   .map img {
     position: absolute;
@@ -1026,10 +1044,15 @@ top: -30px;
 transform: translate(-50%,-50%);
 /* margin-top: -6em; */
 }
- 
+
 #merch .product-images img {
   border-radius: 50%;
   text-align: center;
+}
+#merch .product-images .column.one-half:hover {
+  transition: transform .2s;
+  transform: scale(1.05);
+  animation: shake .15s infinite ;
 }
 
 #merch .product-images a {
@@ -1133,7 +1156,30 @@ transform: translate(-50%,-50%);
   }
 }
 
+.rotate {
+  opacity: 0;
+  display: block;
+  animation: fadein 1s forwards .05s, rotatingfood 5s infinite, bigdrop .5s ease-in forwards;
+  animation-fill-mode: both;
+}
 
+.rotate-lime {
+  opacity: 0;
+  display: block;
+  animation: fadein 1s forwards .05s, rotatingfood 4s infinite, bigdrop .5s ease-in forwards;
+  animation-fill-mode: both;
+}
+@keyframes rotatingfood {
+  0% {
+    rotate: -5deg;
+  }
+  50% {
+    rotate: 5deg;
+  }
+  100% {
+    rotate: -5deg;
+  }
+}
 
 .hero h1 span:nth-child(1) {
   opacity: 0;
@@ -1158,5 +1204,17 @@ transform: translate(-50%,-50%);
     }
     100% {
       opacity: 1;
+    }
+  }
+  
+  @keyframes shake {
+    0% {
+      rotate: -.3deg;
+    }
+    50% {
+      rotate: .3deg;
+    }
+    100% {
+      rotate: -.3deg;
     }
   }
