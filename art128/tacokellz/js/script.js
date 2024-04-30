@@ -12,7 +12,7 @@
     });
 
     // CLOSE MENU NAV WHENA STICKY NAV LINK IS CLICKED //
-const fixednavlinks = document.querySelectorAll('.fixed nav a');
+const fixednavlinks = document.querySelectorAll('.site-header .site-nav a');
 fixednavlinks.forEach(function(el) {
     el.onclick = function() {
        menunav.setAttribute('data-navstate', 'closed');
