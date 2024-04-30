@@ -934,6 +934,27 @@ ul {
 }
 }
 
+@media (max-width: 768px) {
+  .mobile { 
+   transform: scale(.75);
+   margin-bottom: 0;
+  }
+  .mobilebaby {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 70px ;
+    bottom: 50px;
+  }
+  .mobilehero {
+    padding-left: 150px;
+  }
+    #menu {
+      padding: 0;
+    }
+  }
+
+
 
 .testbutton:hover {
   background: url("../img/pinktransparent-button.png");
@@ -963,7 +984,11 @@ ul {
 color: #27782F;
 }
 
-
+@media (max-width: 768px) {
+  #order {
+    padding: 0;
+  }
+}
 
 /* EVENTS SECTION */
 #events {
@@ -982,10 +1007,15 @@ padding-bottom: 10em;
   display: relative;
   transform: scale(1.5);
   max-width: 100%;
- padding-top: 20px;
+  padding-top: 20px;
   padding-bottom: 80px ;
 }
-  
+  #events {
+    padding-bottom: 0;
+  }
+  .map img {
+    padding-bottom: 0;
+  }
 }
 
 #events .container {
@@ -1028,8 +1058,6 @@ padding-bottom: 10em;
   }
 
 
-
-
 #merch h2 {
 text-align: center;
 }
@@ -1069,7 +1097,7 @@ transform: translate(-50%,-50%);
 }
 
 
-/* /* animations  */
+/* ANIMATIONS */
 .drop {
   opacity: 0;
   display: block;
