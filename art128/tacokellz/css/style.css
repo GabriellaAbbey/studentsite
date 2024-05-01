@@ -1191,12 +1191,6 @@ transform: translate(-50%,-50%);
   animation-fill-mode: both;
 }
 
-.rotate-lime {
-  opacity: 0;
-  display: block;
-  animation: fadein 1s forwards .05s, rotatingfood 4s infinite, bigdrop .5s ease-in forwards;
-  animation-fill-mode: both;
-}
 @keyframes rotatingfood {
   0% {
     rotate: -5deg;
@@ -1237,12 +1231,12 @@ transform: translate(-50%,-50%);
   
   @keyframes shake {
     0% {
-      rotate: -.3deg;
+      rotate: -.15deg;
     }
     50% {
-      rotate: .3deg;
+      rotate: .15deg;
     }
     100% {
-      rotate: -.3deg;
+      rotate: -.15deg;
     }
   }
