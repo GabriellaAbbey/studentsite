@@ -1005,7 +1005,6 @@ padding-bottom: 10em;
   text-align: center;
  }
  .map img {
-  display: relative;
   transform: scale(1.5);
   max-width: 100%;
   padding-top: 20px;
