@@ -1046,6 +1046,14 @@ padding-bottom: 10em;
   padding-top: 6em;
 }
 
+@media (max-width: 768px) {
+  #merch {
+  margin-top: 8em;
+  padding-top: 6em;
+  }
+}
+
+
 #merch::after {
   content: '';
   clip-path: ellipse(60% 100% at 50% 100%);
@@ -1240,3 +1248,55 @@ transform: translate(-50%,-50%);
       rotate: -.15deg;
     }
   }
+
+  /* * ON SCROLL ANIMATION */
+
+  
+  section {
+    transition: all 1s ease;
+    
+  }
+  
+  
+  .revealme {
+    transition: all 1s ease;
+    opacity: 0;
+  }
+  
+  section[data-sectionstate="active"] .revealme {
+    opacity: 1;
+  }
+  
+    .revealme {
+      transform: translateX(-2em);
+    }
+    &[data-sectionstate="active"] .revealme {
+      transform: translateX(0);
+    }
+  
+    .revealme.mybottomstuff {
+      transform: translateY(2em);
+    }
+    &.active .revealme.mybottomstuff {
+      transform: translateY(0);
+    }
+
+
+
+    /* SCROLL HERO SCALING */
+
+    .image {
+      background-color: #f2f2f2;
+      line-height: 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+        align-items: center;
+      }
+    #shrink {
+      transform: scale(1);
+    }
+    
+    #shrink-tagline {
+      transform: translateY(80px);
+    }
