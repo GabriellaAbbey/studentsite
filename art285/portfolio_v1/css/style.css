@@ -296,7 +296,7 @@ img {
     top: 8px;
     right: 8px;
     font-size: .875em;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     color: #ba0c0c;
 }
 
@@ -325,7 +325,7 @@ img {
 @media (max-width: 768px) {
     .bottomright-desktop svg {
         width: 80%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
 
     }
 
@@ -1273,7 +1273,7 @@ footer {
 /* --------------------------- */
 
 .subhero {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 
     img {
         width: 100%;
