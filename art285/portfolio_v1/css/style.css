@@ -710,6 +710,13 @@ body {
 }
 
 
+.site-menu-main {
+    a {
+        color: black;
+    }
+
+}
+
 /* TOGGLE MENU */
 
 /* HIDE MENU BUTTON IF NOT USING TOGGLE NAV */
@@ -1243,11 +1250,11 @@ footer {
 }
 
 /* Background colors */
-
+/* 
 .tint {
     background-color: rgba(21, 5, 65, 0.223);
     background-blend-mode: multiply;
-}
+} */
 
 
 .background-image[data-currentslide='0'] {
