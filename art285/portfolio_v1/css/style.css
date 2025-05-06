@@ -1251,11 +1251,11 @@ footer {
 
 
 .background-image[data-currentslide='0'] {
-    background-image: url(../img/Frenzi/frenzihero.png)
+    background-color: pink;
 }
 
 .background-image[data-currentslide='1'] {
-    background-image: url(../img/pv_helmets.png)
+    background-color: orange;
 }
 
 .background-image[data-currentslide='2'] {
